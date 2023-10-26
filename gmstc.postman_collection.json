@@ -1,0 +1,2509 @@
+{
+	"info": {
+		"_postman_id": "5ad6cb51-f7fc-4057-b5e0-6c6bba724bc4",
+		"name": "gmstc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30218564",
+		"_collection_link": "https://blue-meteor-307436.postman.co/workspace/GMS~5dff7503-b47b-438e-ba42-d0d79b7eaf96/collection/30218564-5ad6cb51-f7fc-4057-b5e0-6c6bba724bc4?action=share&source=collection_link&creator=30218564"
+	},
+	"item": [
+		{
+			"name": "Welcome to GMS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count Dashboard Items",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/dashboard/count",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"dashboard",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Appointment Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment-status",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment-status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Appointment Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment-status/37",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment-status",
+						"37"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Appointment Slot",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment-slot",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment-slot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Appointment Slot",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment-slot/55",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment-slot",
+						"55"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Appointment Service",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment-service",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Appointment Service",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment-service/2",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment-service",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All User Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user-profile",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single User Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user-profile/5",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user-profile",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All System Setting",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/system-setting",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"system-setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single System Setting",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/system-setting/1",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"system-setting",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Appointment Log",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment-log",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment-log"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Appointment Log",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment-log/5",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment-log",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/address",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"address"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Address",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/address/5",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"address",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User with Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user/user-with-profile",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user",
+						"user-with-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single User with Profile",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user/user-with-profile/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user",
+						"user-with-profile",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user/count",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All User Settings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user-setting",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user-setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single User Settings",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user-setting/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user-setting",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All User Rating",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user-rating",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user-rating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single User Rating",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/user-rating/5",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"user-rating",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Service",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Service",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Service Service Provider",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service/service-provider/7",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service",
+						"service-provider",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Service Type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-type",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Service Type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-type/19",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-type",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Service Sub Type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-subtype",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-subtype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Service Sub Type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-subtype/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-subtype",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Service Sub Type by Service Type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-subtype/service-type/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-subtype",
+						"service-type",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Service Sub Type by Service Provider id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-subtype/service-provider/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-subtype",
+						"service-provider",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count Group Service Type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-subtype/count",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-subtype",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Service Provider",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Service Provider",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider/18",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All ServiceProvider by Service Type",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider/service-type/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider",
+						"service-type",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read ServiceProvider with details",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider/details/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider",
+						"details",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count ServiceProvider",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider/count",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Service Provider Slot",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider-slot",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider-slot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single ServiceProvider Slot",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider-slot/6",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider-slot",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All ServiceProvider Setting",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}/gms/service-provider-setting",
+					"host": [
+						"{{urlendpoint}}"
+					],
+					"path": [
+						"gms",
+						"service-provider-setting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single ServiceProvider Setting",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}/gms/service-provider-setting/4",
+					"host": [
+						"{{urlendpoint}}"
+					],
+					"path": [
+						"gms",
+						"service-provider-setting",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All ServiceProvider Rating",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider-rating",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider-rating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single ServiceProvider Rating",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/service-provider-rating/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"service-provider-rating",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Role",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/role",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Role",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/role/5",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"role",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/resource",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"resource"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/resource/2",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"resource",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Resource Rating",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/resource-rating",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"resource-rating"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Resource Rating",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/resource-rating/3",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"resource-rating",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Resource Availability",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/resource-availability",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"resource-availability"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Resource Availability",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/resource-availability/2",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"resource-availability",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Resource Availability by Resource",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/resource-availability/resource/2",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"resource-availability",
+						"resource",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read ALL FAQ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/faq",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"faq"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single FAQ",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/faq/5",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"faq",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Desgination",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/designation",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"designation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Desgination",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/designation/6",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"designation",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Designation by ServiceProvider ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/designation/service-provider/6",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"designation",
+						"service-provider",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Denial Reason",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/denial-reason",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"denial-reason"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Denial Reason",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/denial-reason/2",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"denial-reason",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Denial reason by ServiceProvider ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/denial-reason/service-provider/6",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"denial-reason",
+						"service-provider",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Default Service",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-service",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-service"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Default Service",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-service/6",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-service",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Default Service SubType",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-service-subtype",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-service-subtype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Default Service SubType",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-service-subtype/6",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-service-subtype",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Default Designation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-designation",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-designation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Default Designation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-designation/4",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-designation",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All default denial reason",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-denial-reason",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-denial-reason"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Default denial reason",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-denial-reason/2",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-denial-reason",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Default denial reason by service provider id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/default-denial-reason/service-provider/2",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"default-denial-reason",
+						"service-provider",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Branch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/branch",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"branch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Branch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/branch/21",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"branch",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Branch by service provider id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/branch/service-provider/11",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"branch",
+						"service-provider",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All Appointment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Single Appointment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment/5",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read Count Appointment",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"  pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlendpoint}}gms/appointment/count",
+					"host": [
+						"{{urlendpoint}}gms"
+					],
+					"path": [
+						"appointment",
+						"count"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
